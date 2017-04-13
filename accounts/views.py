@@ -29,3 +29,6 @@ def login(request):
 	if user:
 		auth.login(request, user)
 	return redirect('/')
+
+def my_lists(request, email):
+	return render(request, 'my_lists.html')
